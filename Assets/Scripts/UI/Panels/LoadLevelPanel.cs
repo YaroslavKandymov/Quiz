@@ -36,6 +36,7 @@ public class LoadLevelPanel : Panel
     {
         PanelOpener.Open(this);
         Opened?.Invoke();
+        _loadPanelAnimationPlayer.PlayAnimation();
     }
 
     private void OnEnded()

@@ -30,11 +30,11 @@ public class Bar
 
         for (int i = 0; i < _levelData.Count; i++)
         {
-            var randomNumber = Random.Range(0, _levelData.CardBundleData.CardDatas.Count);
+            int randomNumber = GetRandomNumber(_levelData.CardBundleData.CardDatas.Count);
 
             while (cardDatas[randomNumber] == null)
             {
-                randomNumber = Random.Range(0, _levelData.CardBundleData.CardDatas.Count);
+                randomNumber = GetRandomNumber(_levelData.CardBundleData.CardDatas.Count);
             }
 
             CardData cardData = cardDatas[randomNumber];
@@ -49,6 +49,11 @@ public class Bar
 
     public void AssignRandomTargetCardData()
     {
-        TargetCardData =_cardDatas[Random.Range(0, _cardDatas.Count)];
+        TargetCardData = _cardDatas[GetRandomNumber(_cardDatas.Count)];
+    }
+
+    private int GetRandomNumber(int count)
+    {
+        return Random.Range(0, count);
     }
 }
