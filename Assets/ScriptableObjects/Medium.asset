@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Medium
   m_EditorClassIdentifier: 
   _count: 6
-  _cardBundleData: {fileID: 11400000, guid: a0db3f2e0ae705443b5e4d9a3b3ef223, type: 2}
+  _cardBundleData: {fileID: 11400000, guid: 4630b4463b105c04fae7a4b8743aca79, type: 2}
